@@ -1,6 +1,6 @@
 {
   "name": "@ravshansbox/sql-helpers",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "SQL helpers",
   "main": "index.ts",
   "scripts": {
