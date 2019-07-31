@@ -2,7 +2,7 @@
   "name": "@ravshansbox/sql-helpers",
   "version": "0.0.2",
   "description": "SQL helpers",
-  "main": "index.ts",
+  "main": "index.js",
   "scripts": {
     "prepublishOnly": "tsc --declaration",
     "test": "jest"
@@ -33,7 +33,6 @@
     "testEnvironment": "node"
   },
   "files": [
-    "index.js",
     "index.d.ts"
   ]
 }
