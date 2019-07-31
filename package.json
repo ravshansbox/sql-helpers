@@ -1,0 +1,35 @@
+{
+  "name": "sql-helpers",
+  "version": "0.0.1",
+  "description": "SQL helpers",
+  "main": "index.ts",
+  "scripts": {
+    "prepublishOnly": "tsc --declaration",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ravshansbox/sql-helpers.git"
+  },
+  "keywords": [
+    "sql",
+    "helper"
+  ],
+  "author": "Ravshan Samandarov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ravshansbox/sql-helpers/issues"
+  },
+  "homepage": "https://github.com/ravshansbox/sql-helpers#readme",
+  "devDependencies": {
+    "@types/jest": "^24.0.0",
+    "jest": "^24.0.0",
+    "ts-jest": "^24.0.0",
+    "tslint": "^5.0.0",
+    "typescript": "^3.0.0"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  }
+}
