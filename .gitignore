@@ -2,3 +2,5 @@
 /node_modules/
 /index.d.ts
 /index.js
+/index.spec.d.ts
+/index.spec.js

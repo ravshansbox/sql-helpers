@@ -1,5 +1,5 @@
 {
-  "name": "sql-helpers",
+  "name": "@ravshansbox/sql-helpers",
   "version": "0.0.1",
   "description": "SQL helpers",
   "main": "index.ts",
@@ -31,5 +31,9 @@
   "jest": {
     "preset": "ts-jest",
     "testEnvironment": "node"
-  }
+  },
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ]
 }
