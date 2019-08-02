@@ -2,7 +2,7 @@
   "name": "@ravshansbox/sql-helpers",
   "version": "1.0.1",
   "description": "SQL helpers",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "prepublishOnly": "tsc",
     "test": "jest"
