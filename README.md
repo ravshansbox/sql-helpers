@@ -1,6 +1,8 @@
 # SQL helpers
 ## Usage examples
 ```
+const { sqlQuery } = require('@ravshansbox/sql-helpers');
+
 sqlQuery(
   'select',
   'from table1',
