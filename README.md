@@ -1,18 +1,25 @@
 # SQL helpers
 ## Usage examples
 ```
-const { sqlQuery } = require('@ravshansbox/sql-helpers');
+const { Pool } = require('pg');
+const { sqlEqual, sqlOnMap, sqlOperator, sqlQuery, sqlSeparator, sqlValue, sqlWhere } = require('@ravshansbox/sql-helpers');
 
-sqlQuery(
+const pool = new Pool();
+
+const queryConfig = sqlQuery(
   'select',
-  'from table1',
-  'join table2', sqlOnMap({
-    'table2.ref_id': 'table1.id'
+  sqlSeparator(['t1.column1_1', 't1.column1_2', 't2.column2_1']),
+  'from table1 as t1',
+  'join table2 as t2', sqlOnMap({
+    't2.ref_id': 't1.id'
   }),
-  sqlSeparator(['column1','column2']),
   sqlWhere(
-    ['column1', '>', 'column2'],
-    sqlEqual('column1', sqlValue('abc')),
+    sqlOperator('and',
+      ['t1.column1_1', '>', 't1.column1_2'],
+      sqlEqual('t2.column2_1', sqlValue('abc')),
+    ),
   ),
 );
+
+pool.query(queryConfig).then(console.info, console.error);
 ```
