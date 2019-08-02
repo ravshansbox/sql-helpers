@@ -4,7 +4,7 @@
   "description": "SQL helpers",
   "main": "index.js",
   "scripts": {
-    "prepublishOnly": "tsc --declaration",
+    "prepublishOnly": "tsc",
     "test": "jest"
   },
   "repository": {
@@ -33,6 +33,6 @@
     "testEnvironment": "node"
   },
   "files": [
-    "index.d.ts"
+    "dist/**/*"
   ]
 }

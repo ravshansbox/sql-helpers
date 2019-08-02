@@ -1,4 +1,4 @@
-import { flatten } from '.';
+import { flatten } from '../src/index';
 
 describe('flatten', () => {
   it('should return a new array', () => {
