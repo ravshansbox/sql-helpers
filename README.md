@@ -1,10 +1,10 @@
 # SQL helpers
 ## Usage examples
 ```
-const { Pool } = require('pg');
+const { Client } = require('pg');
 const { sqlEqual, sqlOnMap, sqlOperator, sqlQuery, sqlSeparator, sqlValue, sqlWhere } = require('@ravshansbox/sql-helpers');
 
-const pool = new Pool();
+const client = new Client();
 
 const queryConfig = sqlQuery(
   'select',
@@ -21,5 +21,5 @@ const queryConfig = sqlQuery(
   ),
 );
 
-pool.query(queryConfig).then(console.info, console.error);
+client.query(queryConfig).then(console.info, console.error);
 ```
