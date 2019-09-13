@@ -1,6 +1,7 @@
 export { sqlEntries } from './sql-entries';
 export { sqlEqual } from './sql-equal';
 export { sqlGroupBy } from './sql-group-by';
+export { sqlIn } from './sql-in';
 export { sqlMapToPredicates } from './sql-map-to-predicates';
 export { sqlOnMap } from './sql-on-map';
 export { sqlOperator } from './sql-operator';
