@@ -1,6 +1,9 @@
+import { flatten } from './flatten';
+
 export const unshift = (array, prefix) => {
-  if (array.length === 0) {
+  const flatArray = flatten(array);
+  if (flatArray.length === 0) {
     return [];
   }
-  return [prefix, array];
+  return [prefix, flatArray];
 };
