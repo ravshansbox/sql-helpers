@@ -1,5 +1,6 @@
 import { sqlSeparator } from './sql-separator';
+import { sqlWrap } from './sql-wrap';
 
 export const sqlAnd = (...predicates) => {
-  return sqlSeparator(predicates, 'and');
+  return sqlWrap(sqlSeparator(predicates, 'and'));
 };

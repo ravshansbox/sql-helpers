@@ -1,5 +1,6 @@
 import { sqlSeparator } from './sql-separator';
+import { sqlWrap } from './sql-wrap';
 
 export const sqlOr = (...predicates) => {
-  return sqlSeparator(predicates, 'or');
+  return sqlWrap(sqlSeparator(predicates, 'or'));
 };
