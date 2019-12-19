@@ -1,3 +1,3 @@
-export const sqlValue = (value) => {
+export const sqlValue = value => {
   return { type: 'value', value };
 };
