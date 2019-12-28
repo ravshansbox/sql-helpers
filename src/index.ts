@@ -18,3 +18,4 @@ export { sqlValues } from './sql-values';
 export { sqlWhere } from './sql-where';
 export { sqlWhereMap } from './sql-where-map';
 export { sqlWrap } from './sql-wrap';
+export { unshift } from './unshift';
