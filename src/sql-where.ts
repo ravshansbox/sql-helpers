@@ -1,5 +1,5 @@
 import { unshift } from './unshift';
 
 export const sqlWhere = (...predicates) => {
-  return unshift(predicates, 'where');
+  return unshift('where', predicates);
 };
