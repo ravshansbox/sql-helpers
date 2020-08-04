@@ -22,10 +22,10 @@
   },
   "homepage": "https://github.com/ravshansbox/sql-helpers#readme",
   "devDependencies": {
-    "@types/jest": "^26.0.0",
-    "jest": "^26.0.0",
-    "ts-jest": "^26.0.0",
-    "typescript": "^3.0.0"
+    "@types/jest": "^26.0.8",
+    "jest": "^26.2.2",
+    "ts-jest": "^26.1.4",
+    "typescript": "^3.9.7"
   },
   "jest": {
     "preset": "ts-jest",
