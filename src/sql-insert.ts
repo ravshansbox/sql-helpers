@@ -1,12 +1,12 @@
 import { sqlQuery } from './sql-query';
 import { sqlValueMap } from './sql-value-map';
 import { sqlValues } from './sql-values';
-import { MutationOptions } from './types';
+import { MutationOptions, Values } from './types';
 import { unshift } from './unshift';
 
 export const sqlInsert = (
   table: string,
-  values: Record<string, unknown>,
+  values: Values,
   { returning }: Partial<MutationOptions> = {}
 ) => {
   return sqlQuery(
